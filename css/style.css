@@ -1,5 +1,6 @@
 /* @media only screen and (min-width : 320px) */
 
+/* RESET */
 body {
     margin-top: 1.5rem;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     background-color: #fcf8e8;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -17,25 +19,61 @@ header {
     text-align: center;
 }
 
+/* LOGO */
 .logo {
     font-family: 'Sacramento', cursive;
     font-size: 2.5rem;
 }
 
-.menu-btn {
-    text-decoration: none;
-    color: inherit;
-}
-
+/* MENU */
 .fa-bars::before {
     font-size: 3rem;
     padding-left: 2rem;
 }
 
-.nav-item {
-    display: none;
+.dropbtn {
+    text-decoration: none;
+    color: inherit;
 }
 
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #f0e8c7;;
+}
+
+.dropdown-content a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .5rem .5rem;
+}
+
+.dropdown-content a:hover {
+    font-size: 110%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* MAIN */
 main  {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -92,10 +130,6 @@ footer > p {
     .logo {
         font-size: 4rem;
     }
-
-    .fa-bars::before {
-        font-size: 4rem;
-    }
 }
 
 @media only screen and (min-width : 768px) {
@@ -111,30 +145,38 @@ footer > p {
     .main-heading {
         font-size: 1.5rem; 
     }    
-}
 
-@media only screen and (min-width : 918px) {
-    .fa-bars::before {
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content {
+        
         display: none;
     }
 
     .nav-item {
+        /* position: static; */
         display: inline-block;
         text-decoration: none;
         color: inherit;
         font-size: 1rem;
         font-family: 'Fira Sans', sans-serif;
         text-transform: uppercase;
+        font-weight: 600;
         padding-right: .5rem;
         margin-right: 1.5rem;
         margin-top: 2.5rem;
-        font-weight: 600;
     }
 
     .nav-item:hover {
         color: #9A022B;
         font-size: 150%;
     }
+}
+
+@media only screen and (min-width : 918px) {
+   
 }
 
 @media only screen and (min-width : 992px) {
