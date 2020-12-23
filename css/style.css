@@ -71,6 +71,11 @@ main  {
     font-size: 3rem;
 }
 
+.food-item > h1:hover {
+    color: #527600;
+    font-size: 350%;
+}
+
 footer {
     background-color: #fbefbf;
     margin: 0;
@@ -108,15 +113,11 @@ footer > p {
     }    
 }
 
-@media only screen and (min-width : 992px) {
-    body {
-        height: 100vh;
-    }
-    
+@media only screen and (min-width : 918px) {
     .fa-bars::before {
         display: none;
     }
-    
+
     .nav-item {
         display: inline-block;
         text-decoration: none;
@@ -130,8 +131,14 @@ footer > p {
         font-weight: 600;
     }
 
+    .nav-item:hover {
+        color: #9A022B;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width : 992px) {
     .main-heading {
-        /* font-size: 2rem; */
         text-align: left;
         margin-right: 30%;
         margin-left: 10%;
