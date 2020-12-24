@@ -1,5 +1,7 @@
 # Cooking school design page
 
+Page published [here](https://vikontrimaite.github.io/cooking-school-design/)
+
 ## Features:
 * responsive layout
 * mobile first 
